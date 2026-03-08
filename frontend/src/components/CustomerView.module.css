@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+.status {
+    color: #6b7280;
+    padding: 2rem 0;
+    text-align: center;
+}

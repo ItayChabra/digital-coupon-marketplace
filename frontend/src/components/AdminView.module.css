@@ -1,0 +1,69 @@
+.container { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.tokenBar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+}
+.tokenBar input { max-width: 360px; }
+
+.formBox {
+    background: white;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.formBox h3 { margin-bottom: 1rem; font-size: 1rem; }
+
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem; }
+.field { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.75rem; }
+.field label { font-size: 0.8rem; color: #555; font-weight: 500; }
+
+.btnCreate {
+    background: #4f46e5;
+    color: white;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+.btnCreate:hover:not(:disabled) { background: #4338ca; }
+.btnCreate:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.tableBox {
+    background: white;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.tableHeader h3 { font-size: 1rem; }
+
+.table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.table th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid #e5e7eb; color: #6b7280; font-weight: 600; }
+.table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #f3f4f6; }
+.sold td { color: #9ca3af; }
+
+.valueCell { font-family: monospace; font-size: 0.82rem; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.badgeAvail { background: #dcfce7; color: #15803d; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+.badgeSold  { background: #fee2e2; color: #b91c1c; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+
+.btnRefresh { background: #e5e7eb; color: #374151; padding: 0.35rem 0.85rem; }
+.btnRefresh:hover:not(:disabled) { background: #d1d5db; }
+.btnRefresh:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btnDelete { background: #fee2e2; color: #b91c1c; padding: 0.3rem 0.65rem; font-size: 0.8rem; }
+.btnDelete:hover { background: #fecaca; }
+
+.empty { color: #9ca3af; padding: 1rem 0; text-align: center; font-size: 0.9rem; }

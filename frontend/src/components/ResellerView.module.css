@@ -1,0 +1,70 @@
+.container { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.tokenBar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+}
+.tokenBar input { max-width: 300px; }
+
+.btnLoad {
+    background: #2563eb;
+    color: white;
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+}
+.btnLoad:hover:not(:disabled) { background: #1d4ed8; }
+.btnLoad:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.cardName { font-weight: 600; font-size: 0.97rem; }
+.cardDesc { font-size: 0.82rem; color: #6b7280; }
+.minPrice { font-size: 0.88rem; color: #374151; margin-top: 0.25rem; }
+
+.purchaseRow {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.purchaseRow input { flex: 1; }
+
+.btnBuy {
+    background: #4f46e5;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
+}
+.btnBuy:hover { background: #4338ca; }
+
+.result {
+    margin-top: 0.5rem;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    word-break: break-all;
+}
+
+.status { color: #6b7280; padding: 2rem 0; text-align: center; }
